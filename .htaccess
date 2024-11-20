@@ -1,7 +1,6 @@
 Options -Indexes 
 ErrorDocument 404 /404.php
-php_value max_input_vars 11000 //Добавлена для устранения ошибки
-
+php_value max_input_vars 11000
 
 <IfModule mod_rewrite.c>
   Options +FollowSymLinks
