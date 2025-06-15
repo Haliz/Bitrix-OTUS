@@ -1,6 +1,5 @@
 Options -Indexes 
 ErrorDocument 404 /404.php
-php_value max_input_vars 11000
 
 <IfModule mod_rewrite.c>
   Options +FollowSymLinks
@@ -15,6 +14,10 @@ php_value max_input_vars 11000
 
 <IfModule mod_dir.c>
   DirectoryIndex index.php index.html
+</IfModule>
+
+<IfModule mod_negotiation.c>
+  Options -MultiViews
 </IfModule>
 
 <IfModule mod_expires.c>
